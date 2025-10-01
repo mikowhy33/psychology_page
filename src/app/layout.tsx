@@ -30,13 +30,13 @@ export default function RootLayout({
 		// always the height is 100%
 		<html className="h-full" lang="en" suppressHydrationWarning>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased h-full min-h-screen flex flex-col`}>
+				className={`${geistSans.variable} ${geistMono.variable} antialiased h-full w-full min-h-screen flex flex-col`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange>
-						{/* fixed we git rid of the flow and its always on top */}
+					{/* fixed we git rid of the flow and its always on top */}
 					<div className=" fixed top-0 right-0 left-0 z-50 ">
 						<NavBar />
 					</div>
