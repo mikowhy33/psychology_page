@@ -114,10 +114,10 @@ export default function HomePage() {
 
 	return (
 		<div>
-			<main className="min-h-screen">
+			<main className="min-h-screen w-full">
 				{/* HERO */}
 				<section
-					className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
+					className="relative h-[70vh] w-full flex items-center justify-center bg-cover bg-center"
 					style={{ backgroundImage: "url('/ai-generated-9603565_1920.jpg')" }}>
 					<div className="absolute inset-0 bg-black/40"></div>
 					<div className="relative z-10 text-center text-white max-w-3xl px-4">
@@ -139,7 +139,7 @@ export default function HomePage() {
 				{/* O mnie */}
 				<section className="py-16 px-6 bg-white">
 					<div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center">
-						<div className="w-1/2">
+						<div className="w-full md:w-1/2 mb-8 md:mb-0">
 							<Image
 								src="/anna.png"
 								alt="mgr Anna Babicz"
@@ -215,7 +215,7 @@ export default function HomePage() {
 						</p>
 
 						<Carousel
-							className="w-full max-w-xs"
+							 className="w-[280px] sm:w-full sm:max-w-xs"
 							// when we connect the plugins to our Ref, the Carousel starts spinning
 							// plugins to tablica instancji pluginow
 							plugins={pluginReady ? [plugin.current] : []}

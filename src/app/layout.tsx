@@ -28,9 +28,8 @@ export default function RootLayout({
 }>) {
 	return (
 		// always the height is 100%
-		<html className="h-full" lang="en" suppressHydrationWarning>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased h-full w-full min-h-screen flex flex-col`}>
+		<html  lang="en" suppressHydrationWarning>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-full min-h-screen flex flex-col overflow-x-hidden`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
